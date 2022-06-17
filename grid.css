@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(5, 5, 56);
+    /* width: 75%;
+    height: 100vh; */
+}
+
+button{
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    margin: 3em 0;
+    border: 0;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 22px;
+
+}
+
+button a{
+    text-decoration: none;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+        'a a a a b b'
+        'c c d d d d'
+        'c c e e e e';
+    gap: 10px;
+    width: 50%;
+}
+
+main div{
+    height: 200px;
+}
+
+#one{
+    background-color: orangered;
+    grid-area: a;
+}
+
+#two{
+    background-color: rgb(255, 208, 0);
+    grid-area: b;
+}
+
+#three{
+    background-color: green;
+    grid-area: c;
+}
+
+#four{
+    background-color: rgb(0, 153, 255);
+    grid-area: d;
+    height: 95px;
+}
+
+#five{
+    background-color: rgb(0, 153, 255);
+    grid-area: e;
+    height: 95px;
+}
